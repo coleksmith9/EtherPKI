@@ -376,3 +376,4 @@ logs
 
 # Ethereum test network log
 log
+/EthereumData/
