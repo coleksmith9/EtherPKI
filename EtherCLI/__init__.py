@@ -1,0 +1,1 @@
+"""CLI application to use the EtherPKI system."""

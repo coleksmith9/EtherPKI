@@ -376,4 +376,5 @@ logs
 
 # Ethereum test network log
 log
-/EthereumData/
+/TestNet/*
+!/TestNet/genesis.json
