@@ -25,4 +25,4 @@ def encode_api_data(data):
         # use the native hex() function
         return hex(data)
     else:
-        return '0x' + data.encode().hex()
+        return '0x' + data.encode().hex() #TODO: verify its working
