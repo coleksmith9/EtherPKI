@@ -7,10 +7,16 @@ import time
 import click
 
 from etherpki.transactions import Transactions
+# from etherpki.events import Events TODO: implement events and uncomment
+from etherpki import userconfig
 
 @click.group()
 def main():
-    pass
+    # Prevent the requests module from printing INFO logs to the console.
+    logging.getLogger("requests").setLevel(logging.WARNING)
+
+    # Save the configuration on exit.
+    atexit.register(userconfig.config.write)
 
 @click.command()
 @click.option("--attributetype", prompt="Attribute Type", type=str)
