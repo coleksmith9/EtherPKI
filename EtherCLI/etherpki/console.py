@@ -1,4 +1,12 @@
+"""Console application for EtherPKI"""
+
+import atexit
+import logging
+import time
+
 import click
+
+from etherpki.transactions import Transactions
 
 @click.group()
 def main():
