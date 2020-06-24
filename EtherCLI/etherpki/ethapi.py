@@ -26,4 +26,4 @@ def encode_api_data(data):
         # use the native hex() function
         return hex(data)
     else:
-        return '0x' + encode_hex(data) #TODO: verify its working
+        return '0x' + encode_hex(data)

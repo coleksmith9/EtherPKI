@@ -7,6 +7,7 @@ from ethapi import ETHERPKI_ABI
 from ethapi import ETHERPKI_DEFAULT_ADDRESS
 from ethapi import ethclient
 from ethapi import encode_api_data
+from gpgapi import generate_pgp_attribute_data
 import ipfshttpclient
 
 
@@ -88,7 +89,19 @@ class Transactions(object):
 
         keyid:  the ID of the PGP key.
         """
-        return None #TODO: fix once gpgapi.py is implemented
+        # generate PGP attribute data and get identifier
+        (fingerprint, data) = generate_pgp_attribute_data(keyid, self.from_address)
+
+        # express identifier as fingerprint in binary format
+        identifier = fingerprint.decode('hex')
+
+        self.add_attribute_over_ipfs(
+            attributetype='pgp-key',
+            has_proof=True,
+            identifier=identifier,
+            data=data,
+        )
+
 
     def sign_attribute(self, attributeID, expiry):
         """Send a transaction to sign an attribute.
