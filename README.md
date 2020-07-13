@@ -8,6 +8,8 @@ This project will be using *solidity* for the smart contract and *python* for th
 #### To-Do
 1. ~~Create a smart contract that can be added to the blockchain~~
 2. ~~Create a testnet of the Ethereum blockchain to use as an example without requiring actual ETH~~
-3. Add attributes to the test blockchain and sign them
-3. Design a CLI application to interact with the blockchain to add, sign, and revoke attributes in Python
-4. Implement a more efficient way (less [gas](https://www.investopedia.com/terms/g/gas-ethereum.asp)) to add and revoke attributes, possibly using [IPFS](https://ipfs.io/)
+3. ~~Add attributes to the test blockchain and sign them~~
+3. ~~Design a CLI application to interact with the blockchain to add, sign, and revoke attributes in Python~~
+4. ~~Implement a more efficient way (less [gas](https://www.investopedia.com/terms/g/gas-ethereum.asp)) to add and revoke attributes, possibly using [IPFS](https://ipfs.io/)~~
+5. Write a paper defining the goals of this project, the outcomes, examples, etc.
+6. Present my product to the CS department at the end of July.
