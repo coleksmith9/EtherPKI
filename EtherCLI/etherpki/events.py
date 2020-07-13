@@ -17,7 +17,7 @@ from ethapi import encode_api_data
 class Events(object):
     def __init__(self, address=ETHERPKI_DEFAULT_ADDRESS):
         """
-        Initialization of the event retreiver.
+        Initialization of the event retriever.
 
         address: the Ethereum address of the contract
         """
@@ -156,7 +156,7 @@ class Events(object):
 
         return signatures_status
 
-    def retreive_attributes(self, attributeID):
+    def retrieve_attribute(self, attributeID):
         """
         Get an attribute, its status, signatures status. Downloads from blockchain if needed.
 
