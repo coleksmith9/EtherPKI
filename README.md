@@ -5,11 +5,16 @@ The basis for this project is using the Ethereum blockchain to utilize smart con
 
 This project will be using *solidity* for the smart contract and *python* for the CLI interaction, as well as *Ethereum* for the storage of the contracts.
 
-#### To-Do
-1. ~~Create a smart contract that can be added to the blockchain~~
-2. ~~Create a testnet of the Ethereum blockchain to use as an example without requiring actual ETH~~
-3. ~~Add attributes to the test blockchain and sign them~~
-3. ~~Design a CLI application to interact with the blockchain to add, sign, and revoke attributes in Python~~
-4. ~~Implement a more efficient way (less [gas](https://www.investopedia.com/terms/g/gas-ethereum.asp)) to add and revoke attributes, possibly using [IPFS](https://ipfs.io/)~~
-5. Write a paper defining the goals of this project, the outcomes, examples, etc.
-6. Present my product to the CS department at the end of July.
+#### Installation Instructions
+Complete all of the following steps in order to use EtherPKI on a local version of the Ethereum blockchain.
+
+To install an Ethereum Test Network, follow [these instructions](https://medium.com/swlh/how-to-set-up-a-private-ethereum-blockchain-c0e74260492c).
+
+To install EtherPKI:
+```
+$ git clone https://github.com/coleksmith9/EtherPKI.git
+$ cd EtherPKI/EtherCLI/
+$ pip3 install --user --editable .
+```
+
+Start your test network and run EtherPKI to add attributes to your entity. From here you need to add another address to your network to sign it or revoke it.
